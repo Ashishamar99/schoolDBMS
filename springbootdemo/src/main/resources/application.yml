@@ -1,0 +1,12 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/school
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
