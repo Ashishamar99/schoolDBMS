@@ -3,21 +3,21 @@ pipeline{
     stages{
         stage("compilePhase"){
             steps{
-                bat "cd C:\Users\Ashish\AppData\Local\Jenkins\.jenkins\workspace\compilePhase\springbootdemo"
+                bat "cd springbootdemo\"
                 bat "mvn compile"
                 }
             }
 
         stage("testPhase"){
             steps{
-                bat "cd C:\Users\Ashish\AppData\Local\Jenkins\.jenkins\workspace\compilePhase\springbootdemo"
+                bat "cd springbootdemo\"
                 bat "mvn test"
                 }
         }
 
         stage("packagePhase"){
         steps{
-            bat "cd C:\Users\Ashish\AppData\Local\Jenkins\.jenkins\workspace\compilePhase\springbootdemo"
+            bat "cd springbootdemo\"
             bat "mvn clean package"
                 }
             }
