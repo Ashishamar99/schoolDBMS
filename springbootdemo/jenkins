@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage("compilePhase"){
             steps{
-                bat "cd springbootdemo"
-                bat "mvn compile"
+                bat "cd springbootdemo
+                     mvn compile"
                 }
             }
 
